@@ -9,8 +9,7 @@ class Block {
   toString() {
     return `Block - 
       Timestamp: ${this
-      .timestamp
-      .substring(0, 10)}
+      .timestamp}
       Last Hash: ${this
       .lastHash
       .substring(0, 10)}
@@ -18,8 +17,10 @@ class Block {
       .hash
       .substring(0, 10)}
       Data     : ${this
-      .data
-      .substring(0, 10)}`;
+      .data}`;
+  }
+  static genesis() {
+    return new this('Genesis time', '-----', 'f1r57-h45h', [])
   }
 }
 
