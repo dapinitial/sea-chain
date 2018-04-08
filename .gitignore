@@ -1,0 +1,8 @@
+## .gitignore
+.env
+config.js
+_design
+.vscode
+build
+client/node_modules
+node_modules
