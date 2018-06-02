@@ -1,6 +1,6 @@
 const Websocket = require('ws');
 const P2P_PORT = process.env.P2P_PORT || 5001;
-const peers = process.end.PEERS
+const peers = process.env.PEERS
   ? process
     .env
     .PEERS
@@ -39,4 +39,4 @@ class P2pServer {
   }
 }
 
-modules.exports = P2pServer;
+module.exports = P2pServer;
