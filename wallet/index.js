@@ -19,7 +19,13 @@ class Wallet {
       .toString()}
     balance: ${this
       .balance}
-    `
+    `;
+  }
+
+  sign(dataHash) {
+    return this
+      .keyPair
+      .sign(dataHash);
   }
 }
 
